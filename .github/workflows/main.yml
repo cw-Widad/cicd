@@ -1,14 +1,11 @@
 on:
   push:
     branches: [ main ]
-job:
+jobs:
   check-linting-on-push:
     runs-on: ubuntu-latest
-     steps:
+    steps:
       - name: 'Install Pylint'
-        - uses: actions/checkout@v3
-        -run: 'sudo apt-get install pylint'
-       - name: 'Install Pylint'
-        - uses: actions/checkout@v3
-        -run: 'sudo apt-get install pylint'
-        -run: 'pylint lsp.py'
+      - uses: actions/checkout@v3
+      - run: 'sudo apt-get install pylint'
+      - run: 'pylint lsp.py'
