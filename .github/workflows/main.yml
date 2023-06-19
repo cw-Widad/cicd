@@ -7,5 +7,7 @@ jobs:
     steps:
       - name: 'Install Pylint'
       - uses: actions/checkout@v3
-      - run: 'sudo apt-get install pylint'
-      - run: 'pylint lsp.py'
+        run: 'sudo apt-get install pylint'
+      - name: 'run Pylint'
+      - uses: actions/checkout@v3
+        run: 'pylint lsp.py'
