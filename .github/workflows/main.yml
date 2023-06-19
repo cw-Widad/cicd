@@ -5,9 +5,9 @@ jobs:
   check-linting-on-push:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Install Pylint'
-      - uses: actions/checkout@v3
-        run: 'sudo apt-get install pylint'
-      - name: 'run Pylint'
-      - uses: actions/checkout@v3
-        run: 'pylint lsp.py'
+     - name: 'Checkout'
+       uses: actions/checkout@v3
+     - name: 'Install Pylint'
+       run: 'sudo apt-get install pylint'
+     - name: 'run Pylint'
+       run: 'pylint lsp.py'
