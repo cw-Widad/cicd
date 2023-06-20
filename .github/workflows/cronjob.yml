@@ -1,6 +1,5 @@
-on:
-  schedule:
+on: [push, schedule]:
     - cron: '05,15,20,30,40,50 * * * *'
 jobs:
   call-workflow-in-local-repo:
-    uses: ./.github/workflows/main.yml
+    uses: ./.github/workflows/reusableworkflow.yml
