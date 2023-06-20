@@ -1,6 +1,7 @@
 on:
   push:
     branches: [ main ]
+  workflow_call:
 jobs:
   check-linting-on-push:
     runs-on: ubuntu-latest
