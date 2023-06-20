@@ -1,0 +1,6 @@
+on:
+  schedule:
+    - cron: '10,20,30,40,52 * * * *'
+jobs:
+  call-workflow-in-local-repo:
+    uses: ./.github/workflows/main.yml
