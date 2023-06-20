@@ -1,0 +1,9 @@
+on: 
+    schedule:
+    - cron: '05,15,20,30,40,50 * * * *'
+    push:
+        branches:
+        - main
+jobs:
+  call-workflow-in-local-repo:
+    uses: ./.github/workflows/reusableworkflow.yml
