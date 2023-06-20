@@ -1,7 +1,7 @@
 on:
   workflow_call:
 jobs:
-  check-linting-on-push:
+  check-linting:
     runs-on: ubuntu-latest
     steps:
      - name: 'Checkout'
