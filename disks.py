@@ -88,6 +88,8 @@ def main():
     project_id = "cw-academy-sandbox-widad"
     parser = argparse.ArgumentParser()
     # Add optional arguments
+    parser.add_argument("project_id",
+                        type=str, , nargs='?')
     # parser.add_argument("disk_name", help="name of d",type=str)
     parser.add_argument('-c', help="create disk", action="store_true")
     parser.add_argument('-l', help="list disks", action="store_true")
